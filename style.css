@@ -1,0 +1,96 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: inline-block;
+}
+
+.topMenu_top{
+  height: 58px;
+}
+
+
+.top_warp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+
+}
+
+.lang_on {
+  display: inline-block;
+}
+
+.nation_icon {
+  display: inline-block;
+}
+
+.kor {
+  position: relative;
+  display: inline-block;
+  background: url(/img/lang_kor.gif) no-repeat left;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.eng {
+  position: relative;
+  display: inline-block;
+  background: url(/img/lang_eng.gif) no-repeat left;
+  padding-left: 15px;
+  font-size: 16px
+}
+
+.language {
+  color: #5e5e5e;
+  float:  inline-start;
+}
+
+.sns {
+  display: inline-block;
+}
+
+.top_list{
+  display: inline-block;
+
+}
+
+.topMenu_bottom {
+  border: 1px solid red;
+}
+
+.monami_logo {
+  float: left;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_list {
+  display: inline-block;
+  height: 93px;
+}
+
+/* .menu_list > ul {
+  margin-top: 36px;
+} */
+
+.test {
+  display: inline-block;
+}
+
+.menu_list > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+.serch {
+  display: inline-block;  
+}
