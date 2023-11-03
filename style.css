@@ -12,6 +12,7 @@ ul ol li {
   list-style: none;
 }
 
+
 .top_menu {
   position: fixed;
   left: 0;
@@ -163,6 +164,13 @@ ul ol li {
   height: 652px;
 }
 
+.contain {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .text_area {
   width: 1400px;
   margin: 0 auto;
@@ -189,8 +197,85 @@ ul ol li {
   margin: 0 0 10px 0;
 }
 
+
+.top_area{
+  display: flex;
+  flex-direction: row;
+  padding-top: 75px;
+  margin-top: 14px;
+  margin-bottom: 22px;
+}
+
 .text_area > p {
+  
   font-size: 15px;
   margin: 30px 0 0 120px;
+  font-weight: 300;
 }
+
+
+.top_left_box {
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+}
+
+
+
+.goods_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods_text > h3 {
+  font-size: 32px;
+  font-weight: 600px;
+  color: #000;
+  line-height: 120%;
+}
+
+.goods_text > h3:after {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: #c40f39;
+}
+
+.goods_text > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color:#6e6e6e;
+}
+
+.griffith_pop_sharp {
+  display: flex;
+  position: absolute;
+  margin: 152px 22px 0 0;
+}
+
+.top_right_box {
+  display: flex;
+}
+
+.sequence {
+  display: flex;
+}
+
+.btm_area {
+  display: flex;
+}
+
+.btm_mid_box {
+  margin-left: 22px;
+}
+
+.btm_right_box {
+  margin-left: 22px;
+}
+
+
+
+
 
