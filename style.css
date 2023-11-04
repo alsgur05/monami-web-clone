@@ -48,7 +48,7 @@ ul ol li {
 .kor {
   position: relative;
   display: inline-block;
-  background: url(/img/lang_kor.gif) no-repeat left;
+  background: url(/img/icon/lang_kor.gif) no-repeat left;
   padding-left: 15px;
   font-size: 16px;
 }
@@ -60,7 +60,7 @@ ul ol li {
 .eng {
   position: relative;
   display: inline-block;
-  background: url(/img/lang_eng.gif) no-repeat left;
+  background: url(/img/icon/lang_eng.gif) no-repeat left;
   padding-left: 15px;
   font-size: 16px
 }
@@ -92,7 +92,7 @@ ul ol li {
   list-style: none;
   margin-left: 10px;
   padding-left: 12px;
-  background: url(/img/tm_bar.gif) no-repeat left center;
+  background: url(/img/icon/tm_bar.gif) no-repeat left center;
 }
 
 .top_list > ul > li > a {
@@ -309,17 +309,17 @@ ul ol li {
 }
 
 
-.p_list {
+.product {
   display: flex;
   justify-content: center;
   margin: 40px 0 40px 0;
 }
 
-.p_list > ul > li {
+.product > ul > li {
   display: inline-block;
 }
 
-.p_list > ul > .on > a{
+.product > ul > .on > a{
   display: block;
   width: 153px;
   height: 32px;
@@ -330,7 +330,7 @@ ul ol li {
   border: 2px solid #c40f39;
 }
 
-.p_list > ul > li > a{
+.product > ul > li > a{
   display: block;
   width: 153px;
   height: 32px;
@@ -341,6 +341,13 @@ ul ol li {
   border: 2px solid #bcbcbc;
 }
 
+.p_list > ul > li{
+  width: 266px;
+  float: left;
+  margin: 0 9px;
+}
 
-
-
+.thum > img {
+  width: 266px;
+  height: 390px;
+}
