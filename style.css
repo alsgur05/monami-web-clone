@@ -278,7 +278,6 @@ ul ol li {
 
 .best_product {
   background-color: #eee;
-  height: 100%;
 }
 
 .dpt {
@@ -330,7 +329,7 @@ ul ol li {
   border: 2px solid #c40f39;
 }
 
-.product > ul > li > a{
+.product >  ul > li > a{
   display: block;
   width: 153px;
   height: 32px;
@@ -341,13 +340,52 @@ ul ol li {
   border: 2px solid #bcbcbc;
 }
 
-.p_list > ul > li{
-  width: 266px;
-  float: left;
-  margin: 0 9px;
+.scroll {
+  overflow-x: scroll;
 }
 
+.p_list > .scroll >ul{
+  display: flex;
+  width: 4828px;
+  background-color: #eee;
+}
+
+.p_list > .scroll > ul > li{
+  display: flex;
+  width: 266px;
+  margin-right: 18px;
+}
+
+.p_list_background {
+  background-color: white;
+}
 .thum > img {
   width: 266px;
   height: 390px;
 }
+
+/* info font size 15px, 12px */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0;
+  height: 102px;
+  background-color: white;
+}
+
+.info > .cate  {
+  display: flex;
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 33px 0 5px;
+}
+
+.info > .name {
+
+  display: flex;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
