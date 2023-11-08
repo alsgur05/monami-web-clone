@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
 }
+
+
 
 a {
   text-decoration: none;
@@ -45,21 +48,44 @@ body {
 }
 
 .lang_on {
-  display: inline-block;
+  display: flex;
+  width: 150px;
+  height: 59px;
+  z-index: 2;
 }
 
 .nation_icon {
-  display: inline-block;
+  display: flex;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.nation_icon_kor{
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.nation_icon_eng {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 15px;
 }
 
 .kor {
-  border: 1px solid #ddd;
-  border-radius: 5px;
   position: relative;
   display: inline-block;
   background: url(/img/icon/lang_kor.gif) no-repeat left;
-  padding-left: 15px;
-  font-size: 16px;
+  padding: 5px 10px 5px 15px;
+  margin-left: 8px;
+  font-size: 11px
 }
 
 .kor > a {
@@ -67,13 +93,12 @@ body {
 }
 
 .eng {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  position: relative;
   display: inline-block;
   background: url(/img/icon/lang_eng.gif) no-repeat left;
-  padding-left: 15px;
-  font-size: 16px
+  margin-left: 15px;
+  padding: 5px 10px 5px 15px;
+  margin-left: 8px;
+  font-size: 11px
 }
 
 .eng > a {
@@ -83,7 +108,8 @@ body {
 .sns {
   position: absolute;
   display: inline-block;
-  padding-left: 114px;
+  padding-left: 140px;
+  z-index: 1;
 }
 
 .top_list{
@@ -139,7 +165,8 @@ body {
   justify-content: center;
   width: 0 auto;
   margin: 0 33px;
-  font-weight: bold;
+  font-weight: 400;
+  color: #000;
 }
 
 .menu_list > ul > li:first-child {
@@ -158,6 +185,10 @@ body {
 .menu_list > ul {
   display: flex;
   margin-left: 70px;
+}
+
+.menu_list > ul > li > a {
+  color: #000;
 }
 
 .serch {
@@ -198,7 +229,8 @@ body {
 .text_area > h3 {
   font-size: 50px;
   margin: 0 0 0 120px;
-  font-weight: inherit;
+  font-weight: 200;
+  line-height: 120%;
 }
 
 .text_area > h3:before {
@@ -219,10 +251,10 @@ body {
 }
 
 .text_area > p {
-  
+  color: white;
   font-size: 15px;
   margin: 30px 0 0 120px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 
@@ -241,9 +273,10 @@ body {
 
 .goods_text > h3 {
   font-size: 32px;
-  font-weight: 600px;
+  font-weight: 550;
   color: #000;
   line-height: 120%;
+  letter-spacing: 4px;
 }
 
 .goods_text > h3:after {
@@ -259,6 +292,7 @@ body {
   margin-top: 10px;
   font-size: 13px;
   color:#6e6e6e;
+  font-weight: 400;
 }
 
 .griffith_pop_sharp {
@@ -267,11 +301,118 @@ body {
   margin: 152px 22px 0 0;
 }
 
-.top_right_box {
-  display: flex;
+/* ----- ondiv 공통 ----- */
+
+/* .ondiv:hover {
+  opacity: 1;
+} */
+
+.ondiv {
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #c40f39;
+  transition: all 0.6s;
 }
 
+.ondiv > .align > .cate {
+  color: #eec7d0;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.ondiv > .align > .name {
+  font-size: 21px;
+  color: #fff;
+}
+
+.griffith_pop_sharp > a > .ondiv {
+  width: 362px;
+  height: 175px;
+}
+
+.sequence > a > .ondiv {
+  width: 756px;
+  height: 330px;
+}
+
+.griffith_pop_sharp > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  width: 362px;
+  height: 175px;
+}
+
+.sequence > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  width: 756px;
+  height: 330px;  
+}
+
+.sequence > a > .ondiv > .align > .cate {
+  color: #eec7d0;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+/* ----------------- + rotate -------------------- */
+.ondiv > .align > .plus {
+  width: 30px;
+  height: 30px;
+  margin: 45px 0 auto;
+  transform: rotateZ(0);
+  transition: all 0.4s 0.2s;
+}
+
+.ondiv > .align > .plus:hover {
+  width: 30px;
+  height: 30px;
+  margin: 45px 0 auto;
+  transform: rotateZ(0);
+  transition: all 0.4s 0.2s;
+}
+
+.ondiv:hover > .align > .plus {
+  transform: rotateZ(180deg);
+  transition: all 0.4s 0.2s;
+}
+
+.ondiv > .align > .plus > .div_width {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.6);
+}
+
+.ondiv > .align > .plus > .div_length {
+  position: relative;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+
+/* --------------------------------------------- */
+
+/* ----- ondiv 공통 여기까지 ----- */
+
+
+/* !!!! relative를 해야 absolute 가 따라감 !!!! */
 .sequence {
+  position: relative;
+}
+
+.top_right_box {
   display: flex;
 }
 
@@ -382,7 +523,7 @@ body {
 
 /* info font size 15px, 12px */
 
-.p_list_background > .info {
+.p_list_background > a > .info {
   display: flex;
   flex-direction: column;
   padding: 0 30px 0;
@@ -395,6 +536,7 @@ body {
   font-size: 12px;
   color: #b3b3b3;
   margin: 33px 0 5px;
+  font-weight: 200;
 }
 
 .info > .name {
@@ -402,7 +544,7 @@ body {
   display: flex;
   font-size: 15px;
   color: #000;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .video {
@@ -432,7 +574,7 @@ body {
 .conwrap {
   background-color: #f8f8f8;
   display: flex ;
-  margin: 0 auto;
+  width: 1400px;
 }
 
 .news {
@@ -586,7 +728,7 @@ body {
   color: #fff;
   border: 2px solid #c40f39;
   background: #c40f39;
-  transition: all 0.6s;
+  transition: all 0.6s ease-in-out;
 }
 
 .inquiry > .tit > h2 {
