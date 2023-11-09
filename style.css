@@ -303,12 +303,12 @@ body {
 
 /* ----- ondiv 공통 ----- */
 
-/* .ondiv:hover {
+.ondiv:hover {
   opacity: 1;
-} */
+}
 
 .ondiv {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -320,7 +320,6 @@ body {
   color: #eec7d0;
   letter-spacing: 3px;
   font-size: 12px;
-  margin-top: 20px;
 }
 
 .ondiv > .align > .name {
@@ -328,40 +327,6 @@ body {
   color: #fff;
 }
 
-.griffith_pop_sharp > a > .ondiv {
-  width: 362px;
-  height: 175px;
-}
-
-.sequence > a > .ondiv {
-  width: 756px;
-  height: 330px;
-}
-
-.griffith_pop_sharp > a > .ondiv > .align {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: middle;
-  width: 362px;
-  height: 175px;
-}
-
-.sequence > a > .ondiv > .align {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: middle;
-  width: 756px;
-  height: 330px;  
-}
-
-.sequence > a > .ondiv > .align > .cate {
-  color: #eec7d0;
-  letter-spacing: 3px;
-  font-size: 12px;
-  margin-top: 20px;
-}
 /* ----------------- + rotate -------------------- */
 .ondiv > .align > .plus {
   width: 30px;
@@ -412,6 +377,90 @@ body {
   position: relative;
 }
 
+.griffith_pop_sharp > a > .ondiv {
+  width: 362px;
+  height: 175px;
+}
+
+.griffith_pop_sharp > a > .ondiv > .align > .cate {
+  margin-top: 20px;
+}
+
+.sequence > a > .ondiv {
+  width: 756px;
+  height: 330px;
+}
+
+.sequence > a > .ondiv > .align > .cate {
+  margin-top: 90px;
+}
+
+.griffith_pop_sharp > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.sequence > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.btm_left_box > a > .ondiv {
+  width: 362px;
+  height: 262px;
+}
+
+.btm_left_box > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.btm_left_box > a > .ondiv > .align > .cate {
+  margin-top: 60px;
+}
+
+.btm_mid_box > a > .ondiv {
+  width: 420px;
+  height: 409px;
+}
+
+.btm_mid_box > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.btm_mid_box > a > .ondiv > .align > .cate {
+  margin-top: 130px;
+}
+
+.btm_right_box {
+  position: relative;
+}
+
+.btm_right_box > a > .ondiv {
+  width: 284px;
+  height: 262px;
+}
+
+.btm_right_box > a > .ondiv > .align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.btm_right_box > a > .ondiv > .align > .cate {
+  margin-top: 70px;
+}
+
 .top_right_box {
   display: flex;
 }
@@ -420,8 +469,13 @@ body {
   display: flex;
 }
 
+.btm_left_box {
+  position: relative;
+}
+
 .btm_mid_box {
   margin-left: 22px;
+  position: relative;
 }
 
 .btm_right_box {
